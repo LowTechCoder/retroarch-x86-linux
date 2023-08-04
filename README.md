@@ -13,3 +13,28 @@ or
 sudo apt remove libreoffice-*
 sudo apt autoremove
 ```
+
+
+
+
+--------------
+If you install retroarch with apt, you'll need to go into the retroarch menu and get the controller working like this:
+Main Menu > Online Updater > Update Controller Profiles
+
+Don't ever use "default config" in retroarch because it will kill all the font things.
+
+Download Cores wasn't showing up so I had to enable it in the retroarch config
+menu_show_core_updater = "true"
+
+the monitor kept wanting to change screen sizes on me for xfce4, everytime I flipped monitors to the mac.  So i found a setting to fix that
+Settings > Display > Advanced Tab > When new displays are connected = Do Nothing
+
+while installing flatpack, it wanted to install some gnome helper package but I skipped it.  You can just find software at flathub and click the button beside the software to do a command install
+
+I started off with using aptitude
+Install this for autocomplete
+sudo aptitude install bash-completion
+restart terminal
+
+aptitude install gamemode
+then enable it in retroarch in Core > Latency
