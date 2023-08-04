@@ -11,4 +11,5 @@ or
 
 ```
 sudo apt remove libreoffice-*
+sudo apt autoremove
 ```
