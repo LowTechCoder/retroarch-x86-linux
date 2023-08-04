@@ -5,5 +5,5 @@ I have other guides to building a retro console with a Raspberry Pi, but I'm bor
 
 clean up installation a little (optional)
 ```
-```sudo aptitude remove libreoffice-math libreoffice-impress libreoffice-draw libreoffice-core libreoffice-common libreoffice-writer libreoffice-math libreoffice-impress libreoffice-draw libreoffice-core libreoffice-common libreoffice-calc goldendict
+sudo aptitude remove libreoffice-math libreoffice-impress libreoffice-draw libreoffice-core libreoffice-common libreoffice-writer libreoffice-math libreoffice-impress libreoffice-draw libreoffice-core libreoffice-common libreoffice-calc goldendict
 ```
