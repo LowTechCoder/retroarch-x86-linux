@@ -7,3 +7,7 @@ clean up installation a little (optional)
 ```
 sudo aptitude remove libreoffice-math libreoffice-impress libreoffice-draw libreoffice-core libreoffice-common libreoffice-writer libreoffice-math libreoffice-impress libreoffice-draw libreoffice-core libreoffice-common libreoffice-calc goldendict
 ```
+or 
+```
+sudo apt remove libreoffice-*
+```
