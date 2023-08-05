@@ -15,6 +15,7 @@ clean up installation a little (optional)
 sudo apt remove libreoffice-*
 sudo apt autoremove
 ```
+# Install Software
 Install gamemode, my favorite command line editor, and flatpak.  Flatpak makes installing Retroarch very simple.
 ```
 sudo apt install gamemode vim flatpak
@@ -33,12 +34,21 @@ And just so you know how to run Retroarch from a flatpak, here you go, but you m
 ```
 flatpak run org.libretro.RetroArch
 ```
+# Desktop Settings
 
+Set your WIFI by clicking the top right icon that looks like 2 tiny screens.
+
+And you may want to set the display resolution at 1080p since that is our target for good looking emulation that doesn't require a ton of video card power.
+Applications > Settings > Display
 
 The monitor kept wanting to change screen sizes on me for xfce4, everytime I flipped monitors to the mac.  So i found a setting to fix that
 Settings > Display > Advanced Tab > When new displays are connected = Do Nothing
 
 You may also want to disable all sleeping options in Xfce > Power
+
+
+I have noticed that sometimes these settings can be lost after a reboot.  Just do it again and try again.  I think the most I ever had to do this was 3 times.
+
 
 
 --------------
