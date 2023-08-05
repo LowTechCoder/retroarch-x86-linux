@@ -7,8 +7,7 @@ Start out with a good minimal installation that's not too minimal.
 
 https://www.debian.org/distrib/
 
-So choose the live installer iso.  Get it onto a thumbdrive.  During installation it will ask you what Desktop to use, choose XFCE.  I like XFCE because it's got an oldschool feel to it, and it's fairly minimal compared to KDE or GNOME.  My auto boot scripts depend on Xfce being installed.
-
+Choose the Xfce Live ISO.  I like Xfce because it's got an oldschool feel to it, and it's fairly minimal compared to KDE or GNOME.  During installation I noticed that some partition options can be different depending on if you chose to boot your thubdrive as EFI, so choose EFI.
 
 clean up installation a little (optional)
 
@@ -16,14 +15,24 @@ clean up installation a little (optional)
 sudo apt remove libreoffice-*
 sudo apt autoremove
 ```
+Install gamemode, my favorite command line editor, and flatpak.  Flatpak makes installing Retroarch very simple.
 ```
-sudo apt install gamemode vim
-sudo apt install flatpak
+sudo apt install gamemode vim flatpak
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 ```
+After Flatpak is installed, reboot your computer.
 
-Install Flatpack
-While installing flatpack, it wanted to install some gnome helper package but I skipped it.  You can just find software at flathub and click the button beside the software to do a command install
+To install packages from Flatpak go here:
+https://flathub.org
+
+But we want to focus mostly on installing Retroarch from Flatpak.  Do this:
+```
+flatpak install flathub org.libretro.RetroArch
+```
+And just so you know how to run Retroarch from a flatpak, here you go, but you may never need this:
+```
+flatpak run org.libretro.RetroArch
+```
 
 
 The monitor kept wanting to change screen sizes on me for xfce4, everytime I flipped monitors to the mac.  So i found a setting to fix that
