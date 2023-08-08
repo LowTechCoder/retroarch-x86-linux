@@ -53,6 +53,27 @@ I have noticed that sometimes these settings can be lost after a reboot.  Just d
 
 --------------
 
+I wanted to make sure I could quickly work on this retro system if something happens, so I divided the partions up like this:
+```
+/boot-efi
+/root
+/var
+/home
+```
+
+The point of doing this is for a couple reasons.  The Flatpak apps are located in the /var, so if I run into a bad Debian update or sofware conflict, I can just use the USB Debian ISO to basically repair the system without losing any Flatpak's, which includes RetroArch.  Also, since my /home is separate, I won't lose any RetroArch config files or games.  I realize there are more modern ways of being able to manage a system, but I'm feeling nostolgic for Debian, and the old ways of doing things.  And for this system, those old ways are fine.
+
+To restore the Debian system files, boot from the usb, install the system, but choose to do custom partitions.  And set them like this:
+```
+/boot-efi (format)
+/root (format)
+/var (keep data)
+/home (keep data)
+```
+Be sure to set the boot flat for the /boot-efi partion.
+
+
+
 
 aptitude install gamemode
 then enable it in retroarch in Core > Latency
