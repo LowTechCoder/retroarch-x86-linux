@@ -70,7 +70,7 @@ To restore the Debian system files, boot from the usb, install the system, but c
 /var (keep data)
 /home (keep data)
 ```
-Be sure to set the boot flat for the /boot-efi partion.
+Be sure to set the boot flat for the /boot-efi partion.  After this is all set up, you'll just need to install Flatpak, but the Flatpak apps will all be there and functioning as they normally do.
 
 
 
