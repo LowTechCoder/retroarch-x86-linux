@@ -21,6 +21,7 @@ Install gamemode, my favorite command line editor, and flatpak.  Flatpak makes i
 sudo apt install gamemode vim flatpak
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 ```
+
 After Flatpak is installed, reboot your computer.
 
 To install packages from Flatpak go here:
@@ -30,9 +31,12 @@ But we want to focus mostly on installing Retroarch from Flatpak.  Do this:
 ```
 flatpak install flathub org.libretro.RetroArch
 ```
-And just so you know how to run Retroarch from a flatpak, here you go, but you may never need this:
+Enable Gamemode in Retroarch with Core > Latency
+
+
+I also set up in Xfce settings startup, this command to auto run Retroarch(DOUBLE CHECK THIS)
 ```
-flatpak run org.libretro.RetroArch
+flatpak run org.libretro.RetroArch -f
 ```
 # Desktop Settings
 
@@ -51,8 +55,6 @@ I have noticed that sometimes these settings can be lost after a reboot.  Just d
 
 
 
---------------
-
 I wanted to make sure I could quickly work on this retro system if something happens, so I divided the partions up like this:
 ```
 /boot-efi
@@ -61,7 +63,7 @@ I wanted to make sure I could quickly work on this retro system if something hap
 /home
 ```
 
-The point of doing this is for a couple reasons.  The Flatpak apps are located in the /var, so if I run into a bad Debian update or sofware conflict, I can just use the USB Debian ISO to basically repair the system without losing any Flatpak's, which includes RetroArch.  Also, since my /home is separate, I won't lose any RetroArch config files or games.  I realize there are more modern ways of being able to manage a system, but I'm feeling nostolgic for Debian, and the old ways of doing things.  And for this system, those old ways are fine.
+The point of doing this is for a couple reasons.  The Flatpak apps are located in the /var, so if I run into a bad Debian update or package conflict, I can just use the USB Debian ISO to  repair the system without losing any Flatpak's, which includes RetroArch.  Also, since my /home is separate, I won't lose any RetroArch config files or games.  I realize there are more modern ways of being able to manage a system, but I'm feeling nostolgic for Debian, and the old ways of doing things.  And for this system, those old ways are fine.
 
 To restore the Debian system files, boot from the usb, install the system, but choose to do custom partitions.  And set them like this:
 ```
@@ -70,10 +72,7 @@ To restore the Debian system files, boot from the usb, install the system, but c
 /var (keep data)
 /home (keep data)
 ```
-Be sure to set the boot flat for the /boot-efi partion.  After this is all set up, you'll just need to install Flatpak, but the Flatpak apps will all be there and functioning as they normally do.
+Be sure to set the boot flag for the /boot-efi partion.  After this is all set up, you'll just need to install Flatpak, but the Flatpak apps will all be there and functioning as they normally do.
 
 
 
-
-aptitude install gamemode
-then enable it in retroarch in Core > Latency
