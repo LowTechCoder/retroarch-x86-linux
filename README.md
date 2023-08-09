@@ -36,7 +36,7 @@ Enable Gamemode in Retroarch with Core > Latency
 
 I also set up in Xfce settings startup, this command to auto run Retroarch(DOUBLE CHECK THIS)
 ```
-flatpak run org.libretro.RetroArch -f
+flatpak run org.libretro.RetroArch
 ```
 # Desktop Settings
 
