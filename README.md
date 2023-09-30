@@ -12,8 +12,9 @@ Choose the Xfce Live ISO.  I like Xfce because it's got an oldschool feel to it,
 clean up installation a little (optional)
 
 ```
-sudo apt-get update
-sudo apt-get dist-upgrade
+sudo apt update
+sudo apt upgrade
+sudo shutdown -r now
 sudo apt remove libreoffice-*
 sudo apt autoremove
 ```
