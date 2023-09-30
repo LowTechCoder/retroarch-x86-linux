@@ -31,9 +31,14 @@ After Flatpak is installed, reboot your computer.
 To install packages from Flatpak go here:
 https://flathub.org
 
+
 But we want to focus mostly on installing Retroarch from Flatpak.  Do this:
 ```
 flatpak install flathub org.libretro.RetroArch
+```
+I sometimes need to control my mouse with a controller so install antimicroX.
+```
+flatpak install flathub io.github.antimicrox.antimicrox
 ```
 Enable Gamemode in Retroarch with Core > Latency
 
