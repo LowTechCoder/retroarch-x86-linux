@@ -23,6 +23,7 @@ Install gamemode, my favorite command line editor, and flatpak.  Flatpak makes i
 ```
 sudo apt install gamemode vim flatpak
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+sudo shutdown -r now
 ```
 
 After Flatpak is installed, reboot your computer.
