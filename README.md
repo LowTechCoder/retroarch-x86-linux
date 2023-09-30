@@ -42,6 +42,7 @@ flatpak install flathub io.github.antimicrox.antimicrox
 ```
 Enable Gamemode in Retroarch with Core > Latency
 
+flatpak run net.pcsx2.PCSX2 -bigpicture -fullscreen
 
 I also set up in Xfce settings startup, this command to auto run Retroarch(DOUBLE CHECK THIS)
 ```
