@@ -44,6 +44,7 @@ Enable Gamemode in Retroarch with Core > Latency
 
 Run PCSX2 in fullscreen and bigpicture mode:
 ```
+flatpak install flathub net.pcsx2.PCSX2
 flatpak run net.pcsx2.PCSX2 -bigpicture -fullscreen
 ```
 
