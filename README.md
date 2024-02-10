@@ -21,7 +21,6 @@ sudo apt autoremove
 # Install Software
 Install gamemode, my favorite command line editor, and flatpak.  Flatpak makes installing Retroarch very simple.
 ```
-sudo apt install wget
 sudo apt install gamemode vim flatpak
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 sudo shutdown -r now
@@ -51,6 +50,13 @@ flatpak run net.pcsx2.PCSX2 -bigpicture -fullscreen
 
 I may start using a program launcher instead of booting straigt up to RetroArch:
 https://github.com/complexlogic/flex-launcher
+```
+sudo apt install wget
+wget https://github.com/complexlogic/flex-launcher/releases/download/v2.1/flex-launcher_2.1_amd64.deb
+sudo apt install ./flex-launcher_2.1_amd64.deb
+cp -r /usr/share/flex-launcher ~/.config
+sed -i "s|/usr/share/flex-launcher|$HOME/.config/flex-launcher|g" ~/.config/flex-launcher/config.ini
+```
 
 
 I also set up in Xfce settings startup, this command to auto run Retroarch(DOUBLE CHECK THIS)
