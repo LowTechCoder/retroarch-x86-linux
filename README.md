@@ -21,6 +21,7 @@ sudo apt autoremove
 # Install Software
 Install gamemode, my favorite command line editor, and flatpak.  Flatpak makes installing Retroarch very simple.
 ```
+sudo apt install wget
 sudo apt install gamemode vim flatpak
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 sudo shutdown -r now
