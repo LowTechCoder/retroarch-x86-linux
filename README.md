@@ -71,10 +71,10 @@ I have noticed that sometimes these settings can be lost after a reboot.  Just d
 
 I wanted to make sure I could quickly work on this retro system if something happens, so I divided the partions up like this:
 ```
-/boot/efi
-/root
-/var
-/home
+/boot/efi - 300mb
+/root - 16gb
+/var - 15gb
+/home - largest
 ```
 
 The point of doing this is for a couple reasons.  The Flatpak apps are located in the /var, so if I run into a bad Debian update or package conflict, I can just use the USB Debian ISO to  repair the system without losing any Flatpak's, which includes RetroArch.  Also, since my /home is separate, I won't lose any RetroArch config files or games.  I realize there are more modern ways of being able to manage a system, but I'm feeling nostolgic for Debian, and the old ways of doing things.  And for this system, those old ways are fine.
