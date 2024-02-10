@@ -72,8 +72,8 @@ I have noticed that sometimes these settings can be lost after a reboot.  Just d
 I wanted to make sure I could quickly work on this retro system if something happens, so I divided the partions up like this:
 ```
 /boot/efi - 300mb
-/root - 16gb
-/var - 15gb
+/root - 20gb
+/var - 21gb
 /home - largest
 ```
 
