@@ -48,6 +48,10 @@ flatpak install flathub net.pcsx2.PCSX2
 flatpak run net.pcsx2.PCSX2 -bigpicture -fullscreen
 ```
 
+I may start using a program launcher instead of booting straigt up to RetroArch:
+https://github.com/complexlogic/flex-launcher
+
+
 I also set up in Xfce settings startup, this command to auto run Retroarch(DOUBLE CHECK THIS)
 ```
 flatpak run org.libretro.RetroArch
