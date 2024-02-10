@@ -56,6 +56,7 @@ wget https://github.com/complexlogic/flex-launcher/releases/download/v2.1/flex-l
 sudo apt install ./flex-launcher_2.1_amd64.deb
 cp -r /usr/share/flex-launcher ~/.config
 sed -i "s|/usr/share/flex-launcher|$HOME/.config/flex-launcher|g" ~/.config/flex-launcher/config.ini
+x-terminal-emulator -e Games/pico-8/pico8 -splore
 ```
 
 
