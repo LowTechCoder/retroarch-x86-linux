@@ -46,6 +46,9 @@ Run PCSX2 in fullscreen and bigpicture mode:
 ```
 flatpak install flathub net.pcsx2.PCSX2
 flatpak run net.pcsx2.PCSX2 -bigpicture -fullscreen
+
+flatpak install flathub org.scummvm.ScummVM
+flatpak run org.scummvm.ScummVM
 ```
 
 I may start using a program launcher instead of booting straigt up to RetroArch:
