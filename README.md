@@ -106,4 +106,11 @@ To restore the Debian system files, boot from the usb, install the system, but c
 Be sure to set the boot flag for the /boot-efi partion.  After this is all set up, you'll just need to install Flatpak, but the Flatpak apps will all be there and functioning as they normally do.
 
 
+You may need flatseal for giving access to flatpak directories
+```
+flatpak install flathub com.github.tchx84.Flatseal
+flatpak run com.github.tchx84.Flatseal
+```
+
+
 
