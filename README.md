@@ -113,4 +113,7 @@ flatpak run com.github.tchx84.Flatseal
 ```
 
 
+Dolphin
+I had some controller issues where it would die if I used the save states.  In Controller Settings I did Continuous Scanning and Background Input.  Not sure which was the one.
+
 
