@@ -117,12 +117,25 @@ Dolphin
 I had some controller issues where it would die if I used the save states.  In Controller Settings I did Continuous Scanning and Background Input.  Not sure which was the one.
 
 
+emulation station
+install from https://es-de.org by downloading the AppImage
+```
+chmod +x ES-DE_x64.AppImage
+./ES-DE_x64.AppImage
+```
+Probably not needed, but if the above doesn't work, then install libfuse2 as well.
+```
+sudo apt install libfuse2
+```
+
 Launch Pico-8 in emulation station
 copy pico files into the pico8 dirctory in emulation station
 create a file called splore.png
 https://gitlab.com/es-de/emulationstation-de/-/blob/master/USERGUIDE.md#using-manually-downloaded-emulators-on-linux
 https://gitlab.com/es-de/emulationstation-de/-/blob/master/USERGUIDE.md
 
+scummvm
+install with flatpak from flathub.org
 add scummvm games manually to emulation station by adding an empty file inside of each game.  Example:
 comi.scummvm for curso of monkey island.
 https://www.scummvm.org/compatibility
